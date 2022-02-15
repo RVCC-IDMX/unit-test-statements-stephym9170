@@ -1,5 +1,5 @@
-/*
- * stmnts-06.js
+
+ /* stmnts-06.js
  * Language: javascript
  * Test: tests/stmnts-06.test.js
  * Path: src/stmnts-06.js
@@ -12,7 +12,7 @@
  * @returns {boolean} true if str is a string
  */
 function isString(str) {
-  // write your code here & return
+  return typeof str === 'string';
 }
 
 /**
@@ -21,7 +21,7 @@ function isString(str) {
  * @returns {boolean}  - true if str is blank (empty)
  */
 function isBlank(str) {
-  // write your code here & return
+  return str === '';
 }
 
 /**
@@ -33,7 +33,10 @@ function isBlank(str) {
  * @returns {string} - the name of the person
  */
 function sayHelloOrBye(name, num) {
-  // write your code here & return
+   if (num === 0) {
+    return `Hello ${name}`;
+  }
+  return `Bye ${name}`;
 }
 
 /**
@@ -44,7 +47,10 @@ function sayHelloOrBye(name, num) {
  * ? [JavaScript: The Definitive Guide, Chapter 4.9.2](https://bit.ly/3Cvjcw2)
  */
 function compareStrings(str1, str2) {
-  // write your code here & return
+  if (str1 === str2) {
+    return true;
+  }
+  return false;
 }
 
 module.exports = {
